@@ -1,4 +1,6 @@
-const App =()=><div>
-  <h1>Hello from App</h1>
-</div>
+import { Route } from "./contextapi/route"
+import routes from "./utils/routes/routes"
+const App = () => <Route.Provider value={{routes}}>
+</Route.Provider>
+
 export default App
