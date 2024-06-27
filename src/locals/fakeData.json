@@ -1,0 +1,7 @@
+{
+  "navbarItems": [
+    { "navtitle": "Home" },
+    { "navtitle": "About Us" },
+    { "navtitle": "Contact Us" }
+  ]
+}
