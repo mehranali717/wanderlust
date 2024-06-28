@@ -1,8 +1,12 @@
-const Navbar =()=><nav>
+import { Link } from "react-router-dom";
+import navbarData from "../../locals/fakeData.json";
+const Navbar = () => (
+  <nav>
     <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
+      {navbarData.navbarItems.map((item) => (
+        <Link to={item.url}><li key={item.id}>{item.navtitle}</li></Link>
+      ))}
     </ul>
-</nav>
-export default Navbar
+  </nav>
+);
+export default Navbar;

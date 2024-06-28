@@ -1,7 +1,19 @@
 {
   "navbarItems": [
-    { "navtitle": "Home" },
-    { "navtitle": "About Us" },
-    { "navtitle": "Contact Us" }
+    {
+      "id": 1,
+      "navtitle": "Home",
+      "url": "/"
+    },
+    {
+      "id": 2,
+      "navtitle": "AboutUs",
+      "url": "/about-us"
+    },
+    {
+      "id": 3,
+      "navtitle": "Contact Us",
+      "url": "/contact-us"
+    }
   ]
 }

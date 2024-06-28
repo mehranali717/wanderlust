@@ -1,4 +1,4 @@
-import Header from "../../header/header";
+import Header from "../../sidebar/sidebar";
 import RouteRenderer from "../../routeRenderer/routeRenderer";
 
 const MainLayout = () => (
