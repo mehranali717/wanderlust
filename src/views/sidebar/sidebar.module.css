@@ -2,8 +2,16 @@
     width: 100px;
     height: 60px;
 }
+
 .sidebar {
     padding: 10px 20px;
-    background-color: #f5b400;
+    background-color: #ccfae6;
     display: flex;
+    flex-direction: column;
+    height: calc(100vh - 40px);
+    max-width: 300px;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 20px 0px;
 }
