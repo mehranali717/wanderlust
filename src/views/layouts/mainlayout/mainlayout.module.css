@@ -1,9 +1,12 @@
 .wrapper {
     display: flex;
 }
+
 .contentWrapper {
     margin: 20px;
-    padding-left: 20px;
     border-radius: 10px;
     width: 100%;
+}
+.contentInner {
+    padding-top: 10px;
 }

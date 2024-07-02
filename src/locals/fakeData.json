@@ -4,6 +4,37 @@
       "id": 1,
       "navtitle": "Dahsboard",
       "url": "/dashboard"
+    },
+    {
+      "id": 2,
+      "navtitle": "Travel Advisors",
+      "url": "/travel-advisors"
+    },
+    {
+      "id": 3,
+      "navtitle": "Destinations",
+      "url": "/destinations"
+    },
+    {
+      "id": 4,
+      "navtitle": "Hotels",
+      "url": "/hotels"
+    },
+    {
+      "id": 5,
+      "navtitle": "Cruises",
+      "url": "/cruises"
+    },
+    {
+      "id": 6,
+      "navtitle": "Inspiration",
+      "url": "/inspiration"
+     
+    },
+    {
+      "id": 7,
+      "navtitle": "Contact Us",
+      "url": "/contact-us"
     }
   ]
 }

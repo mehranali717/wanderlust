@@ -1,0 +1,9 @@
+.header {
+    background-color: var(--fill-sky-blue);
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+.header h1 {
+    text-transform: capitalize;
+    color: #012d54;
+}
