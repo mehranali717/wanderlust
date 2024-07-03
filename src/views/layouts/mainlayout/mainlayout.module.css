@@ -3,10 +3,11 @@
 }
 
 .contentWrapper {
-    margin: 20px;
+    margin:0px 20px;
     border-radius: 10px;
     width: 100%;
 }
+
 .contentInner {
     padding-top: 10px;
 }

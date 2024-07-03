@@ -7,4 +7,10 @@
     font-weight: 700;
     font-size: 18px;
     color: #012d54;
+    transition: all 0.5s ease-in-out;
+}
+
+.listItem:hover, .listItem.active {
+    background-color: var(--fill-sky-blue);
+    border-radius: 10px;
 }

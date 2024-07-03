@@ -18,7 +18,8 @@ li {
     list-style-type: none;
     color: #023d5d;
 }
+
 :root {
-    --fill-sky-blue : #afcfea9c;
-    --fill-primary-blue :#5ba4e09c;
+    --fill-sky-blue: #afcfea9c;
+    --fill-primary-blue: #5ba4e09c;
 }
