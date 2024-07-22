@@ -6,7 +6,7 @@ import Navbar from "../navbar/navbar";
 const Sidebar = () => (
   <div className={styles.sidebar}>
     <div className={styles.logo}>
-      <Link to="/">
+      <Link to="/home">
         <Images
           imgUrl={LogoImg}
           imgAlt="Logo is here"

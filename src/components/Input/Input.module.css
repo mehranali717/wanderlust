@@ -1,0 +1,16 @@
+.inputField {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 7px;
+    background-color: var(--fill-light-blue);
+    border: 0;
+    border-bottom: 1px solid var(--fill-sky-blue);
+    transition: 0.3s all ease-in-out;
+    display: inline-block;
+}
+
+.inputField:focus {
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid var(--fill-primary-blue);
+}

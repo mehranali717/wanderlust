@@ -1,6 +1,8 @@
+import { Login } from "../../pages";
+
 const AuthLayout = () => (
   <>
-    <h1>Hello from AuthLayout</h1>
+   <Login />
   </>
 );
 export default AuthLayout;

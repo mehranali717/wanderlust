@@ -24,7 +24,7 @@ const routeConfig = [
 const routes = [
   ...generateRoutesFromConfigs(routeConfig),
   {
-    path: "/",
+    path: "/home",
     exact: true,
     component: () => <Home />,
   },
