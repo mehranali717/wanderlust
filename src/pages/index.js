@@ -6,3 +6,4 @@ export { default as ContactUs } from "./contact-us/contact-us";
 export { default as Cruises } from "./cruises/cruises";
 export { default as Hotels } from "./hotels/hotels";
 export { default as Inspiration } from "./inspiration/inspiration";
+export {default as Login} from "./login/login"

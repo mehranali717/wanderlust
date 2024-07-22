@@ -70,7 +70,14 @@ export const ContactUsPageConfig = {
     },
   ],
 };
-
+ export const LoginPageConfig = {
+  routes: [
+    {
+      path: "/login",
+      component: React.lazy(() => import("../../pages/login/login"))
+    }
+  ]
+}
 // settings: {
 //   layout: {
 //     config: {},

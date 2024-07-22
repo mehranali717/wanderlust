@@ -1,8 +1,6 @@
-import Sidebar from "../../sidebar/sidebar";
-import RouteRenderer from "../../routeRenderer/routeRenderer";
 import styles from "./mainlayout.module.css";
 import { Suspense } from "react";
-import Header from "../../header/header";
+import { Sidebar, Header, RouteRenderer } from "../../views";
 const MainLayout = () => (
   <div className={styles.wrapper}>
     <Sidebar />

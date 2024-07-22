@@ -3,11 +3,12 @@ import {
   ContactUsPageConfig,
   HotelsPageConfig,
   InspirationPageConfig,
+  LoginPageConfig,
   cruisesPageConfig,
   dashboardPageConfig,
   destinationsPageConfig,
   travelAdvisorPageConfig,
-} from "../config/PageConfig";
+} from "../config/RouteConfig";
 import { generateRoutesFromConfigs } from "../fuseUtils/fuseUtils";
 
 const routeConfig = [
@@ -18,6 +19,7 @@ const routeConfig = [
   cruisesPageConfig,
   InspirationPageConfig,
   ContactUsPageConfig,
+  LoginPageConfig
 ];
 const routes = [
   ...generateRoutesFromConfigs(routeConfig),
