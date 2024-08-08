@@ -78,6 +78,22 @@ export const ContactUsPageConfig = {
     }
   ]
 }
+export const WelcomePageConfig = {
+  routes: [
+    {
+      path:'/welcome',
+      component:React.lazy(()=>import("../../features/auth/welcome"))
+    }
+  ]
+}
+export const UserListPageConfig = {
+  routes: [
+    {
+      path:'/usersList',
+      component:React.lazy(()=>import("../../features/users/usersList"))
+    }
+  ]
+}
 // settings: {
 //   layout: {
 //     config: {},

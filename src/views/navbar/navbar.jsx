@@ -5,8 +5,8 @@ const Navbar = () => (
   <nav className={styles.navbar}>
     <ul>
       {navbarData.navbarItems.map((item) => (
-        <Link to={item.url}>
-          <li key={item.id} className={styles.listItem}>
+        <Link to={item.url} key={item.id} >
+          <li className={styles.listItem}>
             {item.navtitle}
           </li>
         </Link>

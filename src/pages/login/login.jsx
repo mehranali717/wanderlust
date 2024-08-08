@@ -8,16 +8,16 @@ import styles from "./login.module.css";
 const Login = () => {
   const userRef = useRef();
   const errRef = useRef();
-  const [user, setUser] = useState("");
-  const [pwd, setPwd] = useState("");
+  const [user, setUser] = useState("mehranAli@gmail.com");
+  const [pwd, setPwd] = useState("password");
   const [errMsg, setErrMsg] = useState("");
   const navigate = useNavigate();
   const [login, { isLoading }] = useLoginMutation();
   
   const dispatch = useDispatch();
-  useEffect(() => {
-    userRef.current.focus();
-  }, []);
+  // useEffect(() => {
+  //   userRef.current.focus();
+  // }, []);
   useEffect(() => {
     setErrMsg("");
   }, [user, pwd]);
@@ -40,7 +40,7 @@ const Login = () => {
       } else {
         setErrMsg("Login Faild");
       }
-      errRef.current.focus();
+      // errRef.current.focus();
     }
   };
   const handleUserInput = (e) => setUser(e.target.value);
@@ -53,8 +53,8 @@ const Login = () => {
     <h1>Loading...</h1>
   ) : (
     <section className={styles.login}>
-        <p>{errMsg}</p>
       <div className={styles.formWrapper}>
+      <p>{errMsg}</p>
         <form className={styles.form} onSubmit={handleSubmit}>
           <div className={styles.formHeader}>
             <h3>Login Form</h3>
