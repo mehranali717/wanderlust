@@ -94,6 +94,14 @@ export const UserListPageConfig = {
     }
   ]
 }
+export const RegisterPageConfig = {
+  routes: [
+    {
+      path:'/registeration',
+      component:React.lazy(()=>import("../../pages/register/register"))
+    }
+  ]
+}
 // settings: {
 //   layout: {
 //     config: {},

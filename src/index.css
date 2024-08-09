@@ -23,8 +23,10 @@ li {
     --fill-sky-blue: #afcfea9c;
     --fill-primary-blue: #5ba4e09c;
     --fill-light-blue: #adcad79c;
-    --fill-base-white:#fff;
+    --fill-base-white: #fff;
+    --fill-base-blue: #005fdc;
 }
+
 .default-btn {
     background-color: var(--fill-primary-blue);
     padding: 10px 20px;

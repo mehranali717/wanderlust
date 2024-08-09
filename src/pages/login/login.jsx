@@ -1,9 +1,9 @@
 import { useRef, useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setCredentials } from "../../features/auth/authSlice";
 import { useLoginMutation } from "../../features/auth/authApiSlice";
-import { Button, Input } from "../../components";
+import { Button, Input, IsLoading } from "../../components";
 import styles from "./login.module.css";
 const Login = () => {
   const userRef = useRef();
@@ -13,11 +13,8 @@ const Login = () => {
   const [errMsg, setErrMsg] = useState("");
   const navigate = useNavigate();
   const [login, { isLoading }] = useLoginMutation();
-  
+
   const dispatch = useDispatch();
-  // useEffect(() => {
-  //   userRef.current.focus();
-  // }, []);
   useEffect(() => {
     setErrMsg("");
   }, [user, pwd]);
@@ -40,21 +37,16 @@ const Login = () => {
       } else {
         setErrMsg("Login Faild");
       }
-      // errRef.current.focus();
     }
   };
   const handleUserInput = (e) => setUser(e.target.value);
   const handlePwdInput = (e) => setPwd(e.target.value);
-  // const { register, handleSubmit } = useForm()
-  // const onSubmit=(data)=>{
-  //     console.log({data});
-  // }
   const content = isLoading ? (
-    <h1>Loading...</h1>
+    <IsLoading />
   ) : (
     <section className={styles.login}>
       <div className={styles.formWrapper}>
-      <p>{errMsg}</p>
+        <p>{errMsg}</p>
         <form className={styles.form} onSubmit={handleSubmit}>
           <div className={styles.formHeader}>
             <h3>Login Form</h3>
@@ -64,7 +56,6 @@ const Login = () => {
               type="email"
               placeholder="Email"
               label="Email*"
-              //   {...register("Email")}
               id="username"
               ref={userRef}
               value={user}
@@ -80,10 +71,10 @@ const Login = () => {
               onChange={handlePwdInput}
               value={pwd}
               required
-              //   {...register("password", { required: true })}
             />
           </div>
           <div className={styles.formFooter}>
+            <Link to="register" className={styles.createAccount}>Create an Account</Link>
             <Button type="submit" text="Login" />
           </div>
         </form>

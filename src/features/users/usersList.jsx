@@ -1,4 +1,6 @@
-import { useGetUSersQuery} from "./usersApiSlice";
+import { IsLoading } from "../../components";
+import { useGetUsersQuery } from "./usersApiSlice";
+import styles from "./usersList.module.css"
 
 const UsersList = () => {
   const {
@@ -7,27 +9,27 @@ const UsersList = () => {
     isSuccess,
     isError,
     error,
-  } = useGetUSersQuery;
-  console.log(users);
-  
+  } = useGetUsersQuery();
+
   let content;
   if (isLoading) {
-    content = <p>"Loading...!"</p>;
-  } else if (isSuccess) {
-    content = (
-      <section>
-        <h1>
-          <ul>
-            {users.map((user, index) => (
-              <li key={index}>{user.username}</li>
-            ))}
-          </ul>
-        </h1>
-      </section>
-    );
+    content =<IsLoading />;
   } else if (isError) {
-    content = <p>{JSON.stringify(error)}</p>;
+    content = <p>Error: {error.message}</p>;
+  } else if (isSuccess) {
+    content =<section>
+        <h1>User List</h1>
+        <ul>
+          {users.map((user, index) => (
+            <li key={index}>{user.username}</li>
+          ))}
+        </ul>
+      </section>
+  } else {
+    content = <p>No users found.</p>;
   }
+
   return content;
 };
+
 export default UsersList;

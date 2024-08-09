@@ -4,6 +4,7 @@ import {
   HotelsPageConfig,
   InspirationPageConfig,
   LoginPageConfig,
+  RegisterPageConfig,
   UserListPageConfig,
   WelcomePageConfig,
   cruisesPageConfig,
@@ -24,6 +25,7 @@ const routeConfig = [
   LoginPageConfig,
   WelcomePageConfig,
   UserListPageConfig,
+  RegisterPageConfig
 ];
 const routes = [
   ...generateRoutesFromConfigs(routeConfig),

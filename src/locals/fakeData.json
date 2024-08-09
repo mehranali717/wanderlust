@@ -35,6 +35,11 @@
       "id": 7,
       "navtitle": "Contact Us",
       "url": "/contact-us"
+    },
+    {
+      "id": 8,
+      "navtitle": "LogOut",
+      "url": "/"
     }
   ]
 }

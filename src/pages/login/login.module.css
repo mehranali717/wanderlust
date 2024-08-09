@@ -39,8 +39,17 @@
 .formFooter {
     display: flex;
     justify-content: end;
+    align-items: end;
+    gap: 20px;
     margin-top: 20px;
 
+}
+.createAccount {
+    text-decoration: underline;
+    color: var(--fill-base-blue);
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1;
 }
 .login {
     

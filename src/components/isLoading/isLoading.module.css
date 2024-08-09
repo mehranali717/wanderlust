@@ -1,0 +1,26 @@
+
+.isLoading {
+    font-size: 34px;
+    color: #3498db;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #3498db, #2ecc71, #e74c3c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
