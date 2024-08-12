@@ -2,44 +2,49 @@
   "navbarItems": [
     {
       "id": 1,
+      "navtitle": "Home",
+      "url": "/"
+    },
+    {
+      "id": 2,
       "navtitle": "Dahsboard",
       "url": "/dashboard"
     },
     {
-      "id": 2,
+      "id": 3,
       "navtitle": "Travel Advisors",
       "url": "/travel-advisors"
     },
     {
-      "id": 3,
+      "id": 4,
       "navtitle": "Destinations",
       "url": "/destinations"
     },
     {
-      "id": 4,
+      "id": 5,
       "navtitle": "Hotels",
       "url": "/hotels"
     },
     {
-      "id": 5,
+      "id": 6,
       "navtitle": "Cruises",
       "url": "/cruises"
     },
     {
-      "id": 6,
+      "id": 7,
       "navtitle": "Inspiration",
       "url": "/inspiration"
      
     },
     {
-      "id": 7,
+      "id": 8,
       "navtitle": "Contact Us",
       "url": "/contact-us"
     },
     {
-      "id": 8,
+      "id": 9,
       "navtitle": "LogOut",
-      "url": "/"
+      "url": "/login"
     }
   ]
 }

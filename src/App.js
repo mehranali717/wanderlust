@@ -4,15 +4,10 @@ import MainLayout from "./layouts/mainlayout/mainlayout";
 import routes from "./utils/routes/routes";
 import AuthLayout from "./layouts/authLayout/authLayout";
 const App = () => {
-  const location = useLocation();
-  const path = location.pathname.split("/").pop();
+  const path = useLocation().pathname.split("/").pop();
   return (
     <Route.Provider value={{ routes }}>
-      {path == "login" || path == "" ? (
-        <AuthLayout />
-      ) : (
-          <MainLayout />
-      )}
+      {path === "login" || path === "signUp" ? <AuthLayout /> : <MainLayout />}
     </Route.Provider>
   );
 };

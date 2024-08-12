@@ -3,7 +3,7 @@ import {
   ContactUsPageConfig,
   HotelsPageConfig,
   InspirationPageConfig,
-  LoginPageConfig,
+  // LoginPageConfig,
   RegisterPageConfig,
   UserListPageConfig,
   WelcomePageConfig,
@@ -22,7 +22,7 @@ const routeConfig = [
   cruisesPageConfig,
   InspirationPageConfig,
   ContactUsPageConfig,
-  LoginPageConfig,
+  // LoginPageConfig,
   WelcomePageConfig,
   UserListPageConfig,
   RegisterPageConfig
@@ -30,7 +30,7 @@ const routeConfig = [
 const routes = [
   ...generateRoutesFromConfigs(routeConfig),
   {
-    path: "/home",
+    path: "/",
     exact: true,
     component: () => <Home />,
   },

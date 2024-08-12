@@ -8,7 +8,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const handleLogout = () => {
     dispatch(logOut());
-    navigate("/");
+    navigate("/login");
   };
   return (
     <nav className={styles.navbar}>

@@ -44,41 +44,41 @@ const Login = () => {
   const content = isLoading ? (
     <IsLoading />
   ) : (
-    <section className={styles.login}>
-      <div className={styles.formWrapper}>
-        <p>{errMsg}</p>
-        <form className={styles.form} onSubmit={handleSubmit}>
-          <div className={styles.formHeader}>
-            <h3>Login Form</h3>
-          </div>
-          <div className={styles.formBoday}>
-            <Input
-              type="email"
-              placeholder="Email"
-              label="Email*"
-              id="username"
-              ref={userRef}
-              value={user}
-              onChange={handleUserInput}
-              autoComplete="off"
-              required
-            />
-            <Input
-              type="password"
-              placeholder="Password"
-              label="Password*"
-              id="password"
-              onChange={handlePwdInput}
-              value={pwd}
-              required
-            />
-          </div>
-          <div className={styles.formFooter}>
-            <Link to="register" className={styles.createAccount}>Create an Account</Link>
-            <Button type="submit" text="Login" />
-          </div>
-        </form>
-      </div>
+    <section>
+      <p>{errMsg}</p>
+      <form className={styles.formWrapper} onSubmit={handleSubmit}>
+        <div className={styles.formHeader}>
+          <h3>Login Form</h3>
+        </div>
+        <div className={styles.formBody}>
+          <Input
+            type="email"
+            placeholder="Email"
+            label="Email*"
+            id="username"
+            ref={userRef}
+            value={user}
+            onChange={handleUserInput}
+            autoComplete="off"
+            required
+          />
+          <Input
+            type="password"
+            placeholder="Password"
+            label="Password*"
+            id="password"
+            onChange={handlePwdInput}
+            value={pwd}
+            required
+          />
+        </div>
+        <div className={styles.formFooter}>
+          <Link to="signUp" className={styles.createAccount}>
+            Create an Account
+          </Link>
+          <Button type="submit" text="Login" />
+        </div>
+      </form>
     </section>
   );
   return content;

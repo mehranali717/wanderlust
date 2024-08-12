@@ -70,14 +70,14 @@ export const ContactUsPageConfig = {
     },
   ],
 };
- export const LoginPageConfig = {
-  routes: [
-    {
-      path: "/login",
-      component: React.lazy(() => import("../../pages/login/login"))
-    }
-  ]
-}
+//  export const LoginPageConfig = {
+//   routes: [
+//     {
+//       path: "/login",
+//       component: React.lazy(() => import("../../views/login/login"))
+//     }
+//   ]
+// }
 export const WelcomePageConfig = {
   routes: [
     {
@@ -97,8 +97,8 @@ export const UserListPageConfig = {
 export const RegisterPageConfig = {
   routes: [
     {
-      path:'/registeration',
-      component:React.lazy(()=>import("../../pages/register/register"))
+      path:'/signUp',
+      component:React.lazy(()=>import("../../views/register/register"))
     }
   ]
 }
