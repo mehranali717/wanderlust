@@ -1,0 +1,5 @@
+.message {
+    padding-top: 5px;
+    display: inline-block;
+    color: var(--fill-base-red);
+}

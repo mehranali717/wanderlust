@@ -13,7 +13,7 @@
     justify-content: center;
 }
 
-.formHeader h3 {
+.formHeader h2 {
 
     font-size: 20px;
     padding: 10px 0px;
@@ -22,7 +22,7 @@
 .formBody {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 .formFooter {
     display: flex;
@@ -38,4 +38,15 @@
     font-size: 19px;
     font-weight: 700;
     line-height: 1;
+}
+.fieldWrapper {
+    position: relative;
+}
+.message {
+    padding-top: 5px;
+    display: inline-block;
+    color: var(--fill-base-red);
+    position: absolute;
+    left: 0;
+    top: 56px;
 }
