@@ -15,8 +15,8 @@ export const validateField = (fieldName, value) => {
         break;
   
       case 'password':
-        if (value.length < 6) {
-          return { errorMsg: "Password must be at least 6 characters long", valid: false };
+        if (value.length < 8) {
+          return { errorMsg: "Password must be at least 8 characters long", valid: false };
         }
         break;
   
