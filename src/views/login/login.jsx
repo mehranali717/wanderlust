@@ -46,11 +46,12 @@ const Login = () => {
   const content = isLoading ? (
     <IsLoading />
   ) : (
-    <section>
-      <form className={styles.formWrapper} onSubmit={handleSubmit}>
-        <div className={styles.formHeader}>
+    <section className={styles.formWrapper} >
+      <div className={styles.formHeader}>
           <h3>Login Form</h3>
         </div>
+      <form onSubmit={handleSubmit}>
+        
         <div className={styles.formBody}>
           <p className={styles.fieldWrapper}>
             <Input

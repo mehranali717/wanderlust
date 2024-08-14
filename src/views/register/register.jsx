@@ -36,8 +36,7 @@ const Register = () => {
     if (isFormValid) {
       try {
         const userData = await signUp({ user, email, pwd, cnfrmpwd, phnmbr });
-        console.log({userData});
-        
+        console.log({ userData });
       } catch (error) {}
     }
   };
@@ -49,11 +48,11 @@ const Register = () => {
   };
 
   return (
-    <section>
-      <form className={styles.formWrapper} onSubmit={handleSubmit}>
-        <div className={styles.formHeader}>
-          <h2>SignUp Form</h2>
-        </div>
+    <section className={styles.formWrapper}>
+      <div className={styles.formHeader}>
+        <h2>SignUp Form</h2>
+      </div>
+      <form onSubmit={handleSubmit}>
         <div className={styles.formBody}>
           <p className={styles.fieldWrapper}>
             <Input
